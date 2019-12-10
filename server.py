@@ -27,7 +27,7 @@ class ServerProtocol(LineOnlyReceiver):
                 self.login = content.replace("login:", "")
                 self.sendLine(f"Welcome, {self.login}!".encode())
             else:
-                self.sendLine("Invalid login.  To create login write: 'login:', and your login".encode())
+                self.sendLine("Invalid login.  To create login write: 'login:', and your login without spaces".encode())
 
 
 class Server(ServerFactory):
