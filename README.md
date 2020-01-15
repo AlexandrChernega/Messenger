@@ -1,2 +1,0 @@
-# Messenger
-Source for server
